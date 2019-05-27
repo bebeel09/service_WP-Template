@@ -2,7 +2,7 @@
 function Service_style(){
 
     // Регистрирую стили
-    wp_register_style( 'main', get_template_directory_uri() . '/css/main.css', array(), '1.7', 'screen');
+    wp_register_style( 'main', get_template_directory_uri() . '/css/main.css', array(), '1.8', 'screen');
 
     // Подключаю стили
     wp_enqueue_style( 'main');

@@ -38,7 +38,7 @@ get_header();
 			case 'Принят в работу': ?>
 <section>
     <div class="status mt-2 mb-2">
-        <div class="m-3 p-2">
+        <div class="container pb-2">
             <div class="content__description__title">
                 <h1>Ремонт №<?=$status['number'];?></h1>
             </div>
@@ -80,7 +80,7 @@ get_header();
 						case 'Диагностика': ?>
 <section>
     <div class="status mt-2 mb-2">
-        <div class="m-3 p-2">
+        <div class="container pb-2">
             <div class="content__description__title">
                 <h1>Ремонт №<?=$status['number'];?></h1>
             </div>
@@ -121,7 +121,7 @@ get_header();
 						case 'Диагностика завершена': ?>
 <section>
     <div class="status mt-2 mb-2">
-        <div class="m-3 p-2">
+        <div class="container pb-2">
             <div class="content__description__title">
                 <h1>Ремонт №<?=$status['number'];?></h1>
             </div>
@@ -163,7 +163,7 @@ get_header();
 						case 'Принят в ремонт': ?>
 <section>
     <div class="status mt-2 mb-2">
-        <div class="m-3 p-2">
+        <div class="container pb-2">
             <div class="content__description__title">
                 <h1>Ремонт №<?=$status['number'];?></h1>
             </div>
@@ -205,7 +205,7 @@ get_header();
 						case 'Готов к выдаче': ?>
 <section>
     <div class="status mt-2 mb-2">
-        <div class="m-3 p-2">
+        <div class="container pb-2">
             <div class="content__description__title">
                 <h1>Ремонт №<?=$status['number'];?></h1>
             </div>
@@ -246,7 +246,7 @@ get_header();
 						case 'Отгружен': ?>
 <section>
     <div class="status mt-2 mb-2">
-        <div class="m-3 p-2">
+        <div class="container pb-2">
             <div class="content__description__title">
                 <h1>Ремонт №<?=$status['number'];?></h1>
             </div>

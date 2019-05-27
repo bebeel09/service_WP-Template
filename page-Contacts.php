@@ -71,12 +71,12 @@ $place = array(
 				<b>Режим работы:</b><br>
 				Пн. – Пт.: с 9:00 до 18:00<br> </div>
 		</div>
-		<div class="mapTab-wrapper d-flex flex-column flex-sm-column flex-md-row justify-content-center mx-auto">
-			<div class="mapTab-list col-12 col-sm-12 col-md-3">
+		<div class="mapTab-wrapper d-flex flex-column flex-sm-column flex-md-row container mx-auto">
+			<div class=" mapTab-list col-12 col-sm-12 col-md-3 h-md-100">
 				<?foreach($place['PLACEMARKS'] as $placemark){
 					// dd($placemark);
 				?>
-					<div id="tabLat<?=$placemark["LAT"]?>Lon<?=$placemark["LON"]?>" data-lat="<?=$placemark["LAT"]?>" data-lon="<?=$placemark["LON"]?>" class="mapTab-item mapTab-list__item p-0">
+					<div id="tabLat<?=$placemark["LAT"]?>Lon<?=$placemark["LON"]?>" data-lat="<?=$placemark["LAT"]?>" data-lon="<?=$placemark["LON"]?>" class="mapTab-list__item">
 					<?if(strpos($placemark["TEXT"], 'катеринбург') <= 0):?>
 						
 					<?endif;?>
@@ -87,9 +87,9 @@ $place = array(
 				}
 				?>
 			</div>
-			<div class="bx-yandex-view-map  col-12 col-sm-12 col-md-6 ">
+			<div class=" bx-yandex-view-map col-12 col-sm-12 col-md-9 ">
 
-				<div id="YMAP_MAP_mF8Ev4" class="bx-yandex-map" style="height: 500px;">Wait...</div>
+				<div  id="YMAP_MAP_mF8Ev4" class="bx-yandex-map justify-content-center" style="height: 500px;">Wait...</div>
 
 
 			</div>
@@ -242,7 +242,7 @@ function SetPlacemarks_1 (tabedmap)
 	?>
 	console.log(arObjects);
 
-	$('.mapTab-item').click(function(){
+	$('.mapTab-list__item').click(function(){
 		var text = $(this).html();
 		console.log(text);
 		var lat = $(this).data('lat');
@@ -251,14 +251,14 @@ function SetPlacemarks_1 (tabedmap)
 	});
 	window.activateBalloon = function(coords, props, options){
 
-		$('.mapTab-item').removeClass('active');
+		$('.mapTab-list__item').removeClass('active');
 		if(!options){
 			options = { closeButton: true };
 		}
 		window.activeBalloon = tabedmap.balloon.open(coords, props, options);
 		window.activeBalloon.events.add('close',function(){
 
-			$('.mapTab-item').removeClass('active');
+			$('.mapTab-list__item').removeClass('active');
 		});
 		tabedmap.setCenter(coords);
 		document.getElementById('tabLat'+coords[0]+'Lon'+coords[1]).classList.add('active');

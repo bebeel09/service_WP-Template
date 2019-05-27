@@ -8863,11 +8863,14 @@ ul {
   .menu-gamburger__label {
     font-size: 23px;
     display: block;
-    cursor: pointer;
-    background: url("../img/menu.png") no-repeat left center;
-    -webkit-background-size: contain;
-            background-size: contain;
-    padding: 10px 0 10px 60px; }
+    padding: 10px 0 10px 20px; }
+    .menu-gamburger__label__adidas {
+      cursor: pointer;
+      border-bottom: 17px double black;
+      border-top: 6px solid black;
+      content: "asd";
+      height: 28px;
+      width: 40px; }
   .menu-gamburger__item {
     display: none;
     max-height: 0;
@@ -8892,11 +8895,6 @@ ul {
 
 input#menu {
   display: none; }
-
-input:checked ~ .menu-gamburger__label {
-  background: url("../img/close.png") no-repeat left center;
-  -webkit-background-size: contain;
-          background-size: contain; }
 
 input:checked ~ .menu-gamburger__item {
   display: block;

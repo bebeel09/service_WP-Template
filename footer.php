@@ -1,7 +1,7 @@
 	 <!-- START FOOTER -->
-	 <footer class="footer">
+     <footer class="footer">
         <div class="container">
-            <div class="row justify-content-around">
+            <div class="row justify-content-between">
                 <div class="col-12 col-sm-8 col-md-4 footer__form-callback flex-column ">
                     <div class="footer__form-callback__title ">Остались вопросы?</div>
                     

@@ -1,21 +1,22 @@
 <?php get_header(); 
 ?>
 
-	 <!-- START CONTENT -->
-	 <section class="page-layout  flex-wrap">
+<!-- START CONTENT -->
+<section class="page-layout  flex-wrap">
+            <div class="container p-0">
             <h1 class="page-layout__title">Ремонт сварочного оборудования</h1>
             <div class="row justify-content-around p-3">
                 <div
-                    class="justify-content-center page-layout__repair-block p-4 col-10 col-sm-10 col-md-5 col-lg-5 col-xl-3 d-flex flex-column ">
+                    class="justify-content-center page-layout__repair-block p-4  d-flex flex-column ">
                     <p>Узнать статус ремонта</p>
-                    <form class="page-layout__repair-block__form  d-flex flex-column  " action="/status/" method="POST">
-                        <input class="page-layout__repair-block__form__input form-control " name="orderNumber" placeholder="Номер ремонта" id="input1"
-                            type="text">
-                        <input class="page-layout__repair-block__form__submit btn " type="submit" value="Подтвердить">
-                    </form>
-                </div>
-                <!-- <div
-                    class="justify-content-center border-color page-layout__repair-block p-4 col-10 col-sm-10 col-md-5 col-lg-5 col-xl-3  d-flex flex-column ">
+                <form class="page-layout__repair-block__form  d-flex flex-column  " action="/status/" method="POST">
+                    <input class="page-layout__repair-block__form__input form-control " name="orderNumber"
+                        placeholder="Номер ремонта" id="input1" type="text">
+                    <input class="page-layout__repair-block__form__submit btn " type="submit" value="Подтвердить">
+                </form>
+            </div>
+            <!-- <div
+                    class="justify-content-center border-color page-layout__repair-block p-4   d-flex flex-column ">
                     <p>Заказать ремонт</p>
                     <form class="page-layout__repair-block__form  d-flex flex-column  " action="">
                         <div class="form-group">
@@ -27,17 +28,17 @@
                         <input class="page-layout__repair-block__form__submit btn " type="submit" value="Подтвердить">
                     </form>
                 </div> -->
-            </div>
+        </div>
     </div>
-    </section>
+</section>
 
-    <section class="content">
-        <div class="content__description container">
+<section class=" content">
+        <div class="container content__description">
             <div class="content__description__title">
                 <h1>Ремонт сварочного оборудования</h1>
             </div>
 
-            <div class="content__description__text">
+            <div class=" content__description__text">
                 Ремонт сварочного оборудования производит сервисный центр компании «ШТОРМ» в течение всего гарантийного
                 срока, который указан в паспорте (применимо к оборудованию приобретенному в ООО «ШТОРМ») и после
                 окончания
@@ -57,7 +58,7 @@
         </div>
     </section>
 
-    <section class="dignites">
+    <section class="container p-0 dignites">
         <div class="d-flex col-12 justify-content-center dignites__video ">
             <iframe width="800" height="450" src="https://www.youtube.com/embed/T1zgVuFq6OU" frameborder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
