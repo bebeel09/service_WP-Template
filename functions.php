@@ -26,7 +26,7 @@ function callback_question(){
         $roistatData = array(
             'roistat' => isset($_COOKIE['roistat_visit']) ? $_COOKIE['roistat_visit'] : null,
             'key'     => 'MTQ3MDE6MjM2MzY6NDY1MzA0ZWI2NjQ1MGRlY2YyZWYzY2M0MDZkM2U0OGI=',
-            'title'   => "Есть вопрос!",
+            'title'   => "Есть вопрос! сайт service.shtorm-its.ru",
         );
         
         // Обрытный звонок
@@ -50,7 +50,7 @@ if ($_POST['processing']=="true"){
     $roistatData = array(
         'roistat' => isset($_COOKIE['roistat_visit']) ? $_COOKIE['roistat_visit'] : null,
         'key'     => 'MTQ3MDE6MjM2MzY6NDY1MzA0ZWI2NjQ1MGRlY2YyZWYzY2M0MDZkM2U0OGI=',
-        'title'   => "Тест. Не отвечать на это!",
+        'title'   => "Заказ обратного зовнка. Сайт service.shtorm-its.ru",
     );
     
     // Обрытный звонок
