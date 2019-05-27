@@ -1,0 +1,74 @@
+/*
+Theme Name: Service theme
+Theme URI: https://www.b4after.pl/portfolio/
+Author: Arkadiusz Wawrzyniak
+Author URI: https://www.b4after.pl/
+Description: Misrem is theme for sites relying on categories and give you a lot of customizing options. Misrem will make your site logicaly ordered by categories and give your users best UI experience.
+Text Domain: srvice
+Version: 1.1.1
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: two-columns, left-sidebar, grid-layout, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, sticky-post, theme-options, threaded-comments, translation-ready, blog 
+*/
+
+/* Theme CSS is available in /assets/css/main.css */
+
+
+.mapTab-wrapper {
+	border: 1px solid #efefef;
+	position: relative;
+	margin: 40px 0;
+}
+
+@media(min-width: 992px) {
+	.mapTab-wrapper {
+		padding-left: 260px;
+	}
+}
+
+.mapTab-list {
+	left: 0;
+	overflow-x: hidden;
+	overflow-y: visible;
+	top: 0;
+}
+
+@media(min-width: 992px) {
+	.mapTab-list {
+		height: 100%;
+		position: absolute;
+		width: 260px;
+	}
+}
+
+@media(max-width: 991px) {
+	.mapTab-list {
+		position: relative;
+		max-height: 130px;
+		width: 100%;
+	}
+}
+
+.mapTab-item {
+	border-bottom: 1px solid #efefef;
+	cursor: pointer;
+	font-weight: normal;
+	padding: 15px;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+}
+
+.mapTab-item:hover,
+.mapTab-item.active {
+	background: #efefef;
+}
+
+.mapTab-item.active {
+	color: #c21f13;
+}
+
+.mapTab-wrapper .ymaps-b-balloon__content-body {
+	font-size: 14px;
+	line-height: 1.433333;
+	white-space: pre-line;
+}
