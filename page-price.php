@@ -25,8 +25,8 @@ get_header();
                 <p>
                     Стоимость ремонта, включая диагностику – от 1800 руб.</p>
             </div>
-            <div class="d-flex content__description__img">
-                <img src="<?php echo get_template_directory_uri()."/img/IMG_7256.jpg"?>" alt="">
+            <div class="content__description__img">
+                <img src="<?php echo get_template_directory_uri()."/img/IMG_7256.jpg"?>" alt="сварочные апппараты">
             </div>
         </div>
     </section>

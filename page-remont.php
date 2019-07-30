@@ -13,8 +13,8 @@
                 Срок и стоимость ремонта зависят от типа оборудования, производителя, стоимости вышедших из строя
                 элементов и сложности ремонта.
             </div>
-            <div class="d-flex content__description__img">
-                <img src="<?php echo get_template_directory_uri()."/img/IMG_7207.jpg"?>" alt="">
+            <div class="content__description__img">
+                <img src="<?php echo get_template_directory_uri()."/img/IMG_7207.jpg"?>" alt="ремонт">
             </div>
         </div>
 

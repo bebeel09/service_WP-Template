@@ -23,8 +23,8 @@ get_header();
    <p>             После ремонта Вы можете забрать оборудование самостоятельно из нашего сервисного центра или оформить
                 доставку ТК.</p>
             </div>
-            <div class="d-flex content__description__img">
-                <img src="<?php echo get_template_directory_uri()."/img/IMG_7363.jpg"?>" alt="">
+            <div class="content__description__img">
+                <img src="<?php echo get_template_directory_uri()."/img/IMG_7363.jpg"?>" alt="доставка">
             </div>
         </div>
     </section>
